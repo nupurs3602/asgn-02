@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Solutions</title>
+    <link rel="stylesheet" href="/css/main.css">  <!-- Link to compiled Tailwind CSS -->
+</head>
+<body>
+    <!-- Navbar (copy this to other files) -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <a href="/" class="btn btn-ghost normal-case text-xl">Climate Solutions</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="/about">About</a></li>
+                <li>
+                    <details>
+                        <summary>Sector</summary>
+                        <ul class="p-2">
+                            <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+                            <li><a href="/solutions/projects?sector=transportation">Transportation</a></li>
+                            <li><a href="/solutions/projects?sector=energy">Energy</a></li>  <!-- Replace with your actual sectors -->
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+                    <li><a href="/solutions/projects?sector=transportation">Transportation</a></li>
+                    <li><a href="/solutions/projects?sector=energy">Energy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto">
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Explore Climate Projects</h1>
+                    <p class="py-6">Discover innovative solutions to climate change.</p>
+                    <a href="/solutions/projects" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid of 3 Projects (hard-coded) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+            <!-- Card 1 (replace with your project data) -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://example.com/image1.jpg" alt="Project 1" /></figure>  <!-- Use feature_img_url -->
+                <div class="card-body">
+                    <h2 class="card-title">Project Title 1</h2>
+                    <p>Short summary here.</p>
+                    <div class="card-actions justify-end">
+                        <a href="/solutions/projects/1" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for 2 more cards -->
+        </div>
+    </div>
+</body>
+</html>
